@@ -16,7 +16,7 @@ function buttonset() {
 }
 // add task
 function addtask() {
-    let input = document.getElementById('tasksInput').value;
+    let input = document.getElementById('maininput').value;
     if (input === "") {
         alert("Input Required")
     } else {
@@ -35,7 +35,7 @@ function addtask() {
         li.appendChild(div);
         let inputsave = document.getElementById('inputsave');
         inputsave.insertBefore(li, inputsave.childNodes[0]);
-        input = document.getElementById('tasksInput');
+        input = document.getElementById('maininput');
         input.value = " ";
     }
 }
